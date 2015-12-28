@@ -1,15 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Color, type: :model do
-  describe 'color' do
-    let(:color) {
-      @color = create :color
+  describe 'scope: avalable' do
+    let(:colors) {
+      create :color
+      Color.available
     }
     it {
-      expect(color.name).to eq 'purple'
+      expect(colors.first.name).to eq 'purple'
     }
     it {
-      expect(color.code).to eq '#ea80fc'
+      expect(colors.first.code).to eq '#ea80fc'
     }
   end
 end
