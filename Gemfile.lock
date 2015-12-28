@@ -157,6 +157,8 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
+    shoulda-matchers (3.0.1)
+      activesupport (>= 4.0.0)
     spring (1.6.1)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
@@ -187,6 +189,7 @@ DEPENDENCIES
   puma
   rails (>= 5.0.0.beta1, < 5.1)
   rspec-rails (~> 3.0)
+  shoulda-matchers (~> 3.0)
   spring
   tzinfo-data
 
