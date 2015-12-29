@@ -10,8 +10,8 @@ Rails.application.routes.draw do
       get 'resources', to: 'resources#all', as: 'resources'
 
       # users
-      get 'users/me', to: 'users/me', as: 'users_me'
-      post 'users/auth', to: 'users/auth', as: 'users_auth'
+      get 'users/me', to: 'users#me', as: 'users_me'
+      post 'users/auth', to: 'users#auth', as: 'users_auth'
     end
   end
 end
