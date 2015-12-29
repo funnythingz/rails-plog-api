@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
       # users
       get 'users/me', to: 'users#me', as: 'users_me'
-      post 'users/auth', to: 'users#auth', as: 'users_auth'
+      post 'users/new', to: 'users#new', as: 'users_new'
     end
   end
 end

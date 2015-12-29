@@ -8,4 +8,8 @@ module ErrorHandler
   def not_found
     ErrorResponseCode.new(status: 404)
   end
+
+  def server_error
+    ErrorResponseCode.new(status: 500)
+  end
 end
