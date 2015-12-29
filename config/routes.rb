@@ -6,7 +6,12 @@ Rails.application.routes.draw do
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
+      # resources
       get 'resources', to: 'resources#all', as: 'resources'
+
+      # users
+      get 'users/me', to: 'users/me', as: 'users_me'
+      post 'users/auth', to: 'users/auth', as: 'users_auth'
     end
   end
 end
