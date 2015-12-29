@@ -2,6 +2,8 @@ require 'digest/md5'
 
 class User < ApplicationRecord
 
+  has_many :plogs
+
   scope :available, -> {
     select(:id)
   }
