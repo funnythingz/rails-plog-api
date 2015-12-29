@@ -7,7 +7,7 @@ class User < ApplicationRecord
   }
 
   scope :me, -> (access_token) {
-    where(access_token: access_token).select(:id).first
+    where(access_token: access_token).select(:id).first!
   }
 
   def create_access_token
