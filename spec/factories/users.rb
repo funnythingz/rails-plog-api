@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :user do
-    access_token "MyString"
+    access_token "abc123"
   end
-
 end
